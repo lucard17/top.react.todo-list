@@ -21,11 +21,12 @@ input {
     flex-grow: 1;
     padding-left: 1rem;
 }
-
+input:disabled{background-color: inherit}
 button {
     height: 3rem;
     width: 3rem;
     background: unset;
+    transition: 0.3s;
 
 }
 
@@ -97,8 +98,8 @@ button:not(:disabled):hover {
     flex: 0 0 100%;
 }
 
-.inputForm__button:disabled,
-.todo-list__edit-button {
+/*.inputForm__button:disabled,*/
+.todo-list__edit-button:not(:disabled) {
     color: #5e5e5e;
 }
 
